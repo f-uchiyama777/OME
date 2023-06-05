@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+
+/*-------------------------
+  global
+-------------------------*/
+/* .top-main-header{
+
+} */
+
+.gl-nav ul{
+  list-style: none;
+}
+
+.gl-nav ul li{
+  float: left;
+  margin-right: 12px;
+}
+
+.gl-nav ul li a{
+  text-decoration: none;
+}
+
+/*-------------------------
+  top
+-------------------------*/
+.top-main p{
+  text-align: center;
+}
+
+/* .top-topics{
+  margin-top: 50-px;
+}
+
+.top-topics ul{
+  list-style-type: none;
+
+}
+
+.top-topics ul li a{
+  text-decoration: none;
+
+} */
