@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +19,12 @@ use App\Http\Controllers\IndexController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+// ルーティングメソッドの書き方
+// Route::get('パス', [コントローラ, 'メソッド名']);
 Route::get('/', [IndexController::class, 'index']);
+Route::get('/news', [NewsController::class, 'index']);
+Route::get('/member', [MemberController::class, 'index']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
