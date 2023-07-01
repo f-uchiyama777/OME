@@ -12,8 +12,8 @@
 </head>
 <body>
     <!-- gl-header -->
-    <header class ="gl-header">
-        <div class="container">
+        <header class ="gl-header">
+            <h1 class="top-main-header">青梅シニアイーグル</h1>
             <nav class="gl-nav">
                 <ul>
                     <li><a href="">お知らせ</a></li>
@@ -23,34 +23,53 @@
                     <li><a href="">新規会員募集</a></li>
                     <li><a href="">問い合わせ</a></li>
                 </ul>
-                </nav>
-            <h1 class="top-main-header"><img src="/images/top.png" alt="青梅シニアイーグル"></h1>
-        </div>
-    </header>
+            </nav>
+        </header>
     <!-- gl-header -->
+    <!-- section -->
+    <section class="main-top">
+        <div class="main-image">
+        <img id="pic" src="/images/top.png" alt="青梅シニアイーグル">
+        <script>
 
-    <!-- section-hero -->
-    <!-- <section class="section-hero">
-        <span class="pc"></span><img src="" alt="">
-        <span class="sp"></span><img src="" alt="">
-    </section> -->
-     <!-- section-hero -->
+            'use strict';
 
+            const img = ["/images/top.png", "/images/baseball1.jpg"];
+
+            let count = -1;
+
+            picChange(); // 関数を実行
+
+            function picChange() {
+
+              count++;
+
+              // カウントが最大になれば配列を初期値に戻すため「0」を指定する
+              if (count == img.length) count = 0;
+
+              // 画像選択
+              document.getElementById("pic").src = img[count];
+
+              // 1秒ごとに実行
+              setTimeout("picChange()", 5000);
+
+            }
+
+            </script>
+        </div>
+        <p>News</p>
+        <p>スケジュール</p>
+    </section>
+    <!-- section -->
     <!-- top-main -->
      <main class="top-main">
-        <div class="container">
-            <p>お知らせ</p>
     <!-- top-main -->
-
     <!-- top-topics -->
     <section class="top-topics">
         <ul>
-
             <li><a href="">リンク</a></li>
         </ul>
     </section>
-
-        </div>
      </main>
 </body>
 </html>

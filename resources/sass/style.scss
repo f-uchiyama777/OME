@@ -3,8 +3,7 @@
 /*-------------------------
   初期値
 -------------------------*/
-.container{
-  width: 1100px;
+body{
   margin: 0 auto;
 }
 
@@ -13,40 +12,48 @@
   global
 -------------------------*/
  .top-main-header{
-    text-align: center
+  text-align: center;
+  background-color: blue;
+}
+
+.gl-header{
+    background-color: black;
 }
 
 .gl-nav ul{
   list-style: none;
   display:flex;
   justify-content: center;
+
 }
 
 .gl-nav ul li{
-  margin-right: 12px;
+  margin-right: 40px;
 }
 
 .gl-nav ul li a{
   text-decoration: none;
+  font-size: 20px;
 }
 
 /*-------------------------
   top
 -------------------------*/
-.top-main p{
+.main-top{
   text-align: center;
 }
 
-/* .top-topics{
-  margin-top: 50-px;
+.main-top p{
+  color: blue;
+  margin: 0 auto;
+  font-size: 30px;
+  border-bottom: 3px solid #333;
+
 }
 
-.top-topics ul{
-  list-style-type: none;
-
+.main-image{
+    background-size: cover; //横幅最大で背景画像化
+    background-repeat: no-repeat;
+    background-position: center; //背景画像を中央寄せ
+    background-image: url(/resources/images/baseball_back.jpg);
 }
-
-.top-topics ul li a{
-  text-decoration: none;
-
-} */
